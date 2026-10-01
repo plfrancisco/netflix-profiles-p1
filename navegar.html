@@ -3,30 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix - Em alta</title>
+  <title>Netflix - Início</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="browse-header">
-    <img src="assets/netflix-logo.svg" alt="Netflix" class="logo">
+    <div class="browse-header-left">
+      <img src="assets/netflix-logo.svg" alt="Netflix" class="logo">
+      <nav class="browse-nav">
+        <a href="navegar.html" class="active">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Minha lista</a>
+      </nav>
+    </div>
     <a href="index.html" class="back-link">&larr; Trocar de perfil</a>
   </header>
 
-  <main class="browse-page">
-    <h1>Em alta agora</h1>
-    <div class="row">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+  <section class="hero" style="background-image: url('assets/banner.png');">
+    <div class="hero-info">
+      <h1>Noite Sem Fim</h1>
+      <p>Um thriller de ação sobre uma corrida contra o tempo em uma cidade que nunca dorme.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-play">&#9654; Assistir</a>
+        <a href="#" class="btn-info">&#9432; Mais informações</a>
+      </div>
     </div>
+  </section>
+
+  <main class="browse-page">
+
+    <div class="row">
+      <h2>Em alta agora</h2>
+      <div class="row-items">
+        <img src="assets/posters/poster1.png" alt="Noite Sem Fim" class="poster">
+        <img src="assets/posters/poster2.png" alt="Código Vermelho" class="poster">
+        <img src="assets/posters/poster3.png" alt="Último Verão" class="poster">
+        <img src="assets/posters/poster4.png" alt="Sombra da Lua" class="poster">
+        <img src="assets/posters/poster5.png" alt="Rota 84" class="poster">
+        <img src="assets/posters/poster6.png" alt="Fogo Cruzado" class="poster">
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>Continuar assistindo</h2>
+      <div class="row-items">
+        <img src="assets/posters/poster7.png" alt="Maré Alta" class="poster">
+        <img src="assets/posters/poster8.png" alt="Zona Neutra" class="poster">
+        <img src="assets/posters/poster9.png" alt="Ponto Cego" class="poster">
+        <img src="assets/posters/poster10.png" alt="Eco Final" class="poster">
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>Recomendados para você</h2>
+      <div class="row-items">
+        <img src="assets/posters/poster11.png" alt="Vale Sombrio" class="poster">
+        <img src="assets/posters/poster12.png" alt="Hora Zero" class="poster">
+        <img src="assets/posters/poster1.png" alt="Noite Sem Fim" class="poster">
+        <img src="assets/posters/poster3.png" alt="Último Verão" class="poster">
+        <img src="assets/posters/poster5.png" alt="Rota 84" class="poster">
+        <img src="assets/posters/poster7.png" alt="Maré Alta" class="poster">
+      </div>
+    </div>
+
   </main>
 
   <footer>
-    <p>Projeto acadêmico sem fins comerciais &mdash; inspirado na tela de perfis da Netflix.</p>
+    <p>Projeto acadêmico sem fins comerciais &mdash; inspirado na tela de perfis e no catálogo da Netflix. Títulos e pôsteres são fictícios.</p>
   </footer>
 
 </body>

@@ -25,6 +25,38 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.browse-header-left {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.browse-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.browse-nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.browse-nav a.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.browse-nav a:hover {
+  color: #b3b3b3;
 }
 
 .back-link {
@@ -145,8 +177,80 @@ main {
   border-color: #ffffff;
 }
 
+.hero {
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(20,20,20,0) 0%, #141414 100%);
+}
+
+.hero-info {
+  position: relative;
+  z-index: 2;
+  padding: 0 50px 60px;
+  max-width: 600px;
+}
+
+.hero-info h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-info p {
+  font-size: 1.1rem;
+  color: #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-play,
+.btn-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-play {
+  background-color: #ffffff;
+  color: #141414;
+}
+
+.btn-play:hover {
+  background-color: #d6d6d6;
+}
+
+.btn-info {
+  background-color: rgba(109, 109, 110, 0.6);
+  color: #ffffff;
+}
+
+.btn-info:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
 .browse-page {
-  padding: 40px 50px;
+  padding: 0 50px 40px;
 }
 
 .browse-page h1 {
@@ -157,21 +261,30 @@ main {
 }
 
 .row {
+  margin-bottom: 35px;
+}
+
+.row h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.row-items {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.card {
-  width: 220px;
-  height: 125px;
-  background: linear-gradient(135deg, #333333, #1a1a1a);
+.poster {
+  width: 180px;
   border-radius: 4px;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.poster:hover {
+  transform: scale(1.08);
 }
 
 footer {
