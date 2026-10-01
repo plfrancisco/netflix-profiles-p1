@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 30px 50px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.browse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-link {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+}
+
+.profiles-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profiles-page h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.profiles-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile {
+  text-decoration: none;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.profile:hover img {
+  border-color: #ffffff;
+}
+
+.profile:hover span {
+  color: #ffffff;
+}
+
+.profile span {
+  font-size: 1rem;
+}
+
+.avatar-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.edit-mode img {
+  filter: brightness(0.5);
+}
+
+.edit-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.add-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  font-size: 4rem;
+  color: #808080;
+  border: 3px solid transparent;
+}
+
+.add-profile:hover .add-icon {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.manage-profiles-btn {
+  margin-top: 50px;
+  padding: 10px 30px;
+  border: 1px solid #808080;
+  color: #808080;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.manage-profiles-btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.browse-page {
+  padding: 40px 50px;
+}
+
+.browse-page h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  height: 125px;
+  background: linear-gradient(135deg, #333333, #1a1a1a);
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555555;
+  font-size: 0.8rem;
+}
